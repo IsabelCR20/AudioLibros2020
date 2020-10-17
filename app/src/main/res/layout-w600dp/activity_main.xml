@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <fragment
+        android:id="@+id/selector_fragment"
+        android:name="com.isa.audiolibros2020.SelectorFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />/                                           <!-- Ayuda a distribuir los elemtos, dependiedo el peso que tenga es la proporcion que se les asigna -->
+    <fragment
+        android:id="@+id/detalle_fragment"
+        android:name="com.isa.audiolibros2020.DetalleFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"></fragment>
+</LinearLayout>
+
+
+
+    <!--
+        <fragment
+            android:id="@+id/fragment_main"
+            android:name="com.isa.audiolibros2020.SelectorFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        -->
